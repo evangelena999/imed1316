@@ -1,0 +1,191 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+				<title>Javascript Practice</title>
+		<style>
+	/* Global Styles */
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-image:url(images/4a.jpg);
+	}
+	
+	/*Gallery table styles*/
+	main table{
+		margin:auto;
+		width:700px;
+	}
+
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f9;
+		color: #333;
+		display: flex;
+		justify-content: center;
+		padding: 20px 0;
+	}
+
+	/* Container Div (800px wide) */
+	.container {
+		width: 800px;
+		background-color: #ffffff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	/* Banner Div (800px x 200px) */
+	.banner {
+		width: 800px;
+		height: 240px;
+		background-color: #2c3e50;
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	/* CSS Horizontal Navigation */
+	
+	ul li a.active{	
+		background-color: #04aa6d;
+	}
+	
+	nav {
+		background-color: #34495e;
+	}
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	nav li {
+		flex: 1;
+	}
+
+	nav a {
+		display: block;
+		padding: 15px 0;
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+	}
+
+	nav a:hover {
+		background-color: #1abc9c;
+	}
+
+	/* Main Content Area */
+	main {
+		padding: 30px;
+		min-height: 200px;
+	}
+
+	/* Footer */
+	footer {
+		background-color: #111111;
+		text-align: center;
+		padding: 2px 0;
+		height:50px;
+		font-size: 0.9rem;
+		color: #fff;
+		border-top: 1px solid #e2e8f0;
+	}
+	footer img{
+			  float:right;
+			  margin:2px;
+	}
+	footer p{
+			margin-top:10px;
+	}
+
+		</style>
+		<script type="text/Javascript">
+		function newPopup(url){
+			popupWindow =window.open(url,'popupWindow','height=400,width=500,left=200,top=10,resizable=yes,scrollbar=no,menubar=no,toolbar=no,location=no,directories=no,status=no')
+		
+		}
+		
+		function newSocial(url){
+			popupWindow =window.open(url,'popupWindow','height=400,width=500,left=200,top=10,resizable=yes,scrollbar=no,menubar=no,toolbar=no,location=no,directories=no,status=no')
+		
+		}
+		
+		</script>
+		 
+	</head>
+	<body>
+
+	<!--Container Div-->
+
+		<div class="container">
+
+	<!--Banner Div -->
+		<div class="banner">
+	<img src="images/banner.jpg"/>
+		</div>
+
+	<!--Horizontal Navigation-->
+		<nav>
+			<ul>
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+	<!--Main Content Placeholder-->
+		<main>
+							<h2>Welcome</h2>
+			<p>The College District is an open-admission, public institution of higher education offering a high-quality, affordable education for academic advancement, workforce training, career development, and lifelong learning to prepare individuals in our diverse communities for life and work in a global and technological society. </p>
+		
+		<!--this is my gallery table-->
+			<table>
+				<!--this is row1-->
+				<tr>
+					<td><a href="Javascript:newPopup('images/img1_lg.jpg');"><img src="images/img1_sm.jpg" width="170px"/></a></td>
+					<td><a href="Javascript:newPopup('images/img2_lg.jpg')"><img src="images/img2_sm.jpg" width="170px"/></a></td>
+					<td><a href="Javascript:newPopup('images/img3_lg.jpg')"><img src="images/img3_sm.jpg" width="170px"/></a></td>
+					<td><a href="Javascript:newPopup('images/img4_lg.jpg')"><img src="images/img4_sm.jpg" width="170px"/></a></td>
+				</tr>
+				<!--this is row2-->
+				<tr>
+					<td><a href="Javascript:newPopup('images/img5_lg.jpg')"><img src="images/img5_sm.jpg" width="170px"/></a></td>
+					<td><a href="Javascript:newPopup('images/img6_lg.jpg')"><img src="images/img6_sm.jpg" width="170px"/></a></td>
+					<td><a href="Javascript:newPopup('images/img7_lg.jpg')"><img src="images/img7_sm.jpg" width="170px"/></a></td>
+					<td><a href="Javascript:newPopup('images/img8_lg.jpg')"><img src="images/img8_sm.jpg" width="170px"/></a></td>
+				</tr>
+			</table>
+		</main>
+
+	<!--Footer-->
+	
+	<footer>
+	<!--socials-->
+	
+		<a href="Javascript:newSocial('http://www.facebook.com');"><img src="images/fb.png" width="40px"/></a>
+		<a href="Javascript:newSocial('http://www.instagram.com');"><img src="images/is.png" width="40px"/></a>
+		<p>&copy;Copyright 2026, Evangelena Perales IMED-1316</p>
+		
+	</footer>
+
+		</div>
+
+	</body>
+	</html>
+
